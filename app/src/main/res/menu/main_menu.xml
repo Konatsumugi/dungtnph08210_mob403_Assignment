@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_Dinningfood"
+            android:icon="@drawable/chicken"
+            android:title="Dinning Food" />
+
+        <item
+            android:id="@+id/nav_Seafood"
+            android:icon="@drawable/shrimp"
+            android:title="SeaFood" />
+
+        <item
+            android:id="@+id/nav_Chinesefood"
+            android:icon="@drawable/chinesefood"
+            android:title="Chinese Food" />
+
+        <item
+            android:id="@+id/nav_Fastfood"
+            android:icon="@drawable/pizza"
+            android:title="Fast Food" />
+
+
+    </group>
+
+</menu>

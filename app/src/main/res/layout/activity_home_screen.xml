@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/bar_menu"
+        app:navigationIcon="@drawable/ic_baseline_format_align_center_24" />
+
+    <TextView
+        android:id="@+id/tvHomeScreen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/purissimabold"
+        android:text="Hi Hira"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tvHomeScreen2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/purissimabold"
+        android:text="want to order delicious food?"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvHomeScreen1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvHomeScreen1"
+        app:layout_constraintTop_toBottomOf="@+id/tvHomeScreen1" />
+
+    <TextView
+        android:id="@+id/tvHomeScreen3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/purissimabold"
+        android:text="Categories"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvHomeScreen2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvHomeScreen2"
+        app:layout_constraintTop_toBottomOf="@+id/tvHomeScreen2" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHomeScreen3">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="170dp"
+            android:layout_height="110dp"
+            android:text="Dinning Food"
+            android:textColor="@color/chip_text"
+            app:chipBackgroundColor="@color/chip_background"
+            app:chipCornerRadius="30dp"
+            app:chipIcon="@drawable/chicken"
+            app:chipIconSize="40dp"
+            app:chipIconTint="@color/chip_icon"
+            app:chipStartPadding="20dp"
+            app:closeIconEnabled="false" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip5"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="170dp"
+            android:layout_height="110dp"
+            android:text="Seefood"
+            android:textColor="@color/chip_text"
+            app:chipBackgroundColor="@color/chip_background"
+            app:chipCornerRadius="30dp"
+            app:chipIcon="@drawable/shrimp"
+            app:chipIconSize="40dp"
+            app:chipIconTint="@color/chip_icon"
+            app:chipStartPadding="30dp"
+            app:closeIconEnabled="false"
+
+
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip6"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="170dp"
+            android:layout_height="110dp"
+            android:text="Chinese Food"
+            android:textColor="@color/chip_text"
+            app:chipBackgroundColor="@color/chip_background"
+            app:chipCornerRadius="30dp"
+            app:chipIcon="@drawable/chinesefood"
+            app:chipIconEnabled="true"
+            app:chipIconSize="40dp"
+            app:chipIconTint="@color/chip_icon"
+            app:chipStartPadding="20dp"
+            app:closeIconEnabled="false" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip7"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="170dp"
+            android:layout_height="110dp"
+            android:text="Fast Food"
+            android:textColor="@color/chip_text"
+            app:chipBackgroundColor="@color/chip_background"
+            app:chipCornerRadius="30dp"
+            app:chipIcon="@drawable/pizza"
+            app:chipIconSize="40dp"
+            app:chipIconTint="@color/chip_icon"
+            app:chipStartPadding="20dp"
+            app:closeIconEnabled="false" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/tvHomeScreen4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/purissimabold"
+        android:text="Fine Dinning Food"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvHomeScreen3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvHomeScreen3"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup" />
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/floatingActionsMenu"
+        android:layout_width="73dp"
+        android:layout_height="184dp"
+        android:layout_margin="16dp"
+        app:fab_addButtonColorNormal="@color/Blue_light"
+        app:fab_addButtonColorPressed="@color/Blue_light"
+        app:fab_expandDirection="up"
+        app:fab_labelsPosition="left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/flbtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="320dp"
+            android:layout_marginRight="320dp"
+            android:layout_marginBottom="44dp"
+            app:fab_colorNormal="@color/purple_200"
+            app:fab_colorPressed="@color/Blue_light"
+            app:fab_icon="@drawable/ic_edit"
+            app:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/flbtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/purple_200"
+            app:fab_colorPressed="@color/Blue_light"
+            app:fab_icon="@drawable/ic_image"
+            app:fab_size="mini" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
